@@ -1,0 +1,59 @@
+@import './ColorsAndDesign.scss';
+
+.mynavbar {
+    display: flex;
+    position: relative;
+
+    > ul {
+        list-style-type: none;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
+
+
+
+/*#region Transitions */
+
+.nav_item_home,
+.nav_item_chatroom,
+.nav_item_groups {
+    > a:hover {
+        transition: all 1s;
+        color: $wkd-orange;
+    }
+}
+
+
+/*#endregion*/
+
+
+
+/*#region Styling-Pseudoelements */
+
+.mynavbar {
+    position: relative;
+}
+
+.mynavbar::after {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    left: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+}
+
+.mynavbar:hover::after {
+    left: 25%;
+    width: 50%;
+    border-color: $wkd-pinkviolett;
+}
+
+/*#endregion*/

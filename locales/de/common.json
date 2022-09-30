@@ -1,4 +1,9 @@
 {
     "APP_PAGE_TITLE": "Text / Audio / Video || Privat (alpha)",
-    "HOME_HELLO": "Hallo bei der neuesten WKD-App! Dies ist die Alpha Version."
+    "HOME_HELLO": "Hallo bei der neuesten WKD-App! Dies ist die Alpha Version.",
+
+    "APP_TITLE": "Private - Kommuniziere mit wem du möchtest.",
+    "NAVBAR_HOME": "HOME",
+    "NAVBAR_CHATROOM": "CHATROOM",
+    "NAVBAR_GROUPS": "GRUPPEN"
 }

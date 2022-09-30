@@ -1,4 +1,8 @@
 {
     "APP_PAGE_TITLE": "Text / Audio / Video || Privat (alpha)",
-    "HOME_HELLO": "Hello on the newest WKD-App! This is Version Alpha."
+    "HOME_HELLO": "Hello on the newest WKD-App! This is Version Alpha.",
+
+    "NAVBAR_HOME": "HOME",
+    "NAVBAR_CHATROOM": "CHATROOM",
+    "NAVBAR_GROUPS": "GROUPS"
 }

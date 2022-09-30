@@ -1,9 +1,11 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 
-function Private({ Component, pageProps }: AppProps) {
+import { Navbar } from '../components/Navbar';
+
+function Private_App({ Component, pageProps }: AppProps) {
   
   const { t, lang } = useTranslation('common');
   const page_title = t('APP_PAGE_TITLE');
@@ -18,9 +20,10 @@ function Private({ Component, pageProps }: AppProps) {
         <link rel='icon' sizes='16x16' href='/graphics/logos/dev_logo.png' />
         <link rel='apple-touch-icon' sizes='120x120' href='/graphics/logos/dev_logo.png' />
       </Head>
+      <Navbar />
       <Component {...pageProps} />
     </>
   )
 }
 
-export default Private
+export default Private_App
